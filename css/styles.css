@@ -166,5 +166,6 @@ main {
       /* display: block; */
       /* margin-top: 10px; */
       background-color: rgba(0, 0, 0, 0.85);
+      cursor: pointer;
     }
 
