@@ -52,16 +52,16 @@ function searchData() {
       }
       let randA = Math.floor(Math.random() * 28);
       one.src = arrResults[randA];
-      oneText.innerHTML = arrText[randA];
+      oneText.innerHTML = "Description: " + arrText[randA];
       let randB = Math.floor(Math.random() * 28);
       two.src = arrResults[randB];
-      twoText.innerHTML = arrText[randB];
+      twoText.innerHTML = "Description: " + arrText[randB];
       let randC = Math.floor(Math.random() * 28);
       three.src = arrResults[randC];
-      threeText.innerHTML = arrText[randC];
+      threeText.innerHTML = "Description: " + arrText[randC];
       let randD = Math.floor(Math.random() * 28);
       four.src = arrResults[randD];
-      fourText.innerHTML = arrText[randD];
+      fourText.innerHTML = "Description: " + arrText[randD];
     })
     .catch(err => {
       console.log("there was an error");
@@ -75,42 +75,42 @@ function searchData() {
 
 image1.addEventListener("mouseenter", function (event) {
   event.target.style.opacity = 0;
-  text1.style.opacity = 100;
+  oneText.style.opacity = 100;
 })
 image1.addEventListener("mouseleave", function (event) {
   event.target.style.opacity = 100;
-  text1.style.opacity = 0;
+  oneText.style.opacity = 0;
 })
 
 
 
 image2.addEventListener("mouseenter", function (event) {
   event.target.style.opacity = 0;
-  text2.style.opacity = 100;
+  twoText.style.opacity = 100;
 })
 image2.addEventListener("mouseleave", function (event) {
   event.target.style.opacity = 100;
-  text2.style.opacity = 0;
+  twoText.style.opacity = 0;
 })
 
 image3.addEventListener("mouseenter", function (event) {
   event.target.style.opacity = 0;
-  text3.style.opacity = 100;
+  threeText.style.opacity = 100;
 })
 image3.addEventListener("mouseleave", function (event) {
   event.target.style.opacity = 100;
-  text3.style.opacity = 0;
+  threeText.style.opacity = 0;
 })
 
 
 image4.addEventListener("mouseenter", function (event) {
   event.target.style.opacity = 0;
-  text4.style.opacity = 100;
+  fourText.style.opacity = 100;
 })
 
 image4.addEventListener("mouseleave", function (event) {
   event.target.style.opacity = 100;
-  text4.style.opacity = 0;
+  fourText.style.opacity = 0;
 })
 
 

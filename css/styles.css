@@ -111,8 +111,19 @@ main {
       font-size:20px;
       font-family:'Cormorant', serif;
       z-index: 1;
+      position: relative;
+      display: inline-block;
     }
-
+    .imageTitle{
+      position: absolute;
+      z-index: 999;
+      margin: 0 auto;
+      left: 50px;
+      right: 50px;
+      top: 40%; /* Adjust this value to move the positioned div up and down */
+      text-align: center;
+      width: 60%; /* Set the width of the positioned div */
+  }
 
 
     .links {
